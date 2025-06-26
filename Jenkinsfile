@@ -65,8 +65,7 @@ pipeline {
                             -Dsonar.language=c \
                             -Dsonar.cfamily.compile-commands=./build/bw-output/compile_commands.json \
                             -Dsonar.sourceEncoding=UTF-8 \
-                            -Dsonar.cfamily.cache.enabled=true \
-                            -Dsonar.branch.name=${GIT_BRANCH} 
+                            -Dsonar.cfamily.cache.enabled=true
                         '''
                     }
                 }   
