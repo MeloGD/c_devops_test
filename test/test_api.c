@@ -45,7 +45,7 @@ void test_api_loadData_reset(void) {
     tApiData data;
     api_init(&data);
 
-    tApiError result = api_loadData(&data, "example_1.csv", false);
+    tApiError result = api_loadData(&data, "example_1.cs", false);
     TEST_ASSERT_EQUAL_INT(E_SUCCESS, result);
     result = api_loadData(&data, "example_2.csv", true);
     TEST_ASSERT_EQUAL_INT(E_SUCCESS, result);
